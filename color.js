@@ -101,11 +101,11 @@ function Color(r, g, b) {
             h /= 60;
             s /= 100;
             v /= 100;
-            i = Math.floor(h);
-            f = h - i;
-            p = v * (1 - s);
-            q = v * (1 - s * f);
-            t = v * (1 - s * (1 - f));
+            var i = Math.floor(h);
+            var f = h - i;
+            var p = v * (1 - s);
+            var q = v * (1 - s * f);
+            var t = v * (1 - s * (1 - f));
             switch (i) {
                 case 0:
                     ret.r = v;

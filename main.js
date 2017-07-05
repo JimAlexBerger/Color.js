@@ -1,20 +1,20 @@
-var canvas2 = document.getElementById('p');
+/*var canvas2 = document.getElementById('p');
 var ctx2 = canvas2.getContext('2d');
 
 var myImageData = ctx2.createImageData(canvas2.width, canvas2.height);
 var data = myImageData.data;
 
 var tempColor = new Color();
-for (var i = 0; i < data.length/10; i += 4) {
-    var width = (i / 4) % 360;
-    var height = Math.floor((i / 4) / 360);
-    tempColor = tempColor.fromHSV(width, 100, height);
+for (var i = 0; i < data.length; i += 4) {
+    var width = (i / 4) % 100;
+    var height = Math.floor((i / 4) / 100);
+    tempColor = tempColor.fromHSV(height, 100, width);
     data[i] = tempColor.r; // red
     data[i + 1] = tempColor.g; // green
     data[i + 2] = tempColor.b; // blue
     data[i + 3] = 255; // blue
 }
-ctx2.putImageData(myImageData, 0, 0);
+ctx2.putImageData(myImageData, 0, 0);*/
 
 
 var canvas = document.getElementById('o');
